@@ -14,7 +14,6 @@ body {
 .header .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
 }
 a {
@@ -50,25 +49,119 @@ a {
     display: flex;
     flex: 1;
 }
-.hero-content {
+.hero .container {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+}
+.hero-content h1 {
+    display: flex;
+    width: 350px;
+    margin: 0;
+}
+.hero-content p {
+ width: 350px;
+ display: flex;
+ align-items: flex-start;
+ flex-direction: column;
+ font-size: 14px;
+ margin-top: 0;
+ color: #e5e7eb;
+}
+.hero-content button {
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.hero-image {
+    background-color: grey;
+    color: white;
+    padding: 80px 100px;
+    margin-right: 50px;
 }
 .information {
     color: #1f2937;
-    font-weight: 900;
     display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
 }
 .boxes {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 24px;
+    justify-content: center;
+
 }
 .box {
-    width: 180px;
-    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+.illistration {
+    border: 3px solid blue;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
     flex-shrink: 0;
+}
+.box p {
+    width: 150px;
+    font-size: 12px;
 }
 .information .container {
     text-align: center;
+}
+.container h2 {
+    font-size: 24px;
+}
+.quotes {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 64px 0;
+}
+.quotes .container {
+    max-width: 500px;
+    margin: auto;
+    padding: 0 16px;
+}
+.quotes p {
+    font-style: italic;
+    font-size: 24px;
+}
+.container .author {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.author {
+    font-weight: 700;
+}
+.call-to-action {
+    display: flex;
+    padding: 64px 0;
+}
+.action-box {
+    display: flex;
+    background-color: dodgerblue;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+.action-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.action-info p {
+    padding: 0;
+    margin: 0;
 }
